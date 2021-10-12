@@ -33,7 +33,7 @@ margin-left: 10px;
     filter: opacity(90%);
 }
 .web-player{
-    display: none;
+  
 }
 .back-img{
     display: none;
@@ -44,9 +44,16 @@ margin-left: 10px;
 .volume-icon{
     display: none;
 }
+.mini-webplayer{
+    background-color: rgb(34, 33, 33);
+    width:100vw;
+    height:75px;
+    bottom: 0;
+    position: fixed;
+}  
 
 @media (min-width:576px){
-   
+
     .main-two{
         display: none;
     }
@@ -58,19 +65,23 @@ margin-left: 10px;
     .fa{
         font-size:50px;
     }  
-   
+   .fa-arrow-circle-up{
+       font-size: 25px;
+   }
 }
 @media (min-width:768px){
     .web-player{
         display: block;
-        background-color: rgb(73, 73, 73);
+        background-color: rgb(34, 33, 33);
     }  
     .back-img{
         display: block;
     } 
 }
 @media (min-width:992px){
-   
+    .mini-webplayer{
+        display: none;
+    }
     .main-class{
         margin-left: 10px;
     display: flex;
