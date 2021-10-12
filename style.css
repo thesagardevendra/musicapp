@@ -6,6 +6,7 @@ margin: 0;
 }
 .grid-box{
 width:140px;
+background-color: rgb(255, 255, 255);
 height:140px;
 margin: 10px;
 border-radius: 15px;
@@ -52,8 +53,13 @@ margin-left: 10px;
     position: fixed;
 }  
 
+.main-cards{
+    display: none;
+}
 @media (min-width:576px){
-
+    .main-cards{
+        display: none;
+    }
     .main-two{
         display: none;
     }
@@ -61,6 +67,7 @@ margin-left: 10px;
         width:200px;
         height:200px;
         font-size: 16px;
+        background-color: white;
     }
     .fa{
         font-size:50px;
@@ -82,6 +89,29 @@ margin-left: 10px;
     .mini-webplayer{
         display: none;
     }
+    .main-cards{
+        cursor: pointer;
+        background-color: #333333;
+        display: block;
+        width: 200px;
+        height: 280px;
+    }
+   .play-button{
+
+     display: none;
+   }
+  .main-cards:hover{
+      background-color: #3b3b3b;
+      transition: .5s all;
+  }
+   .main-cards:hover .play-button{
+      margin-left: 110px; 
+      margin-top: 110px;
+       display:block;
+   }
+   .play-button:hover{
+   transform: scale(1.1);
+   }
     .main-class{
         margin-left: 10px;
     display: flex;
@@ -95,6 +125,7 @@ margin-left: 10px;
         font-size: 13px;
     }
     .main-two{
+        background-color: rgb(46, 46, 46);
         display: block;
         width: 100%;
     }
