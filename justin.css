@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('justinbieber.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.banner{
+  display:flex;
+  flex-direction: column;
+  height: 900px;
+  margin-top:36%;
+}
+.banner-1 p:nth-child(2){
+  font-size: 30px;
+  font-weight: 700
+}
+.banner-2{
+  height: 100vh;
+  background-image:linear-gradient(to right,rgba(0, 46, 73, 0.986),rgb(20, 20, 20));
+}
+.back-img{
+  display: none;
+}
+.play-icon{
+  display: none;
+}
+.volume-icon{
+  display: none;
+}
+.mini-webplayer{
+  background-color: rgb(34, 33, 33);
+  width:100vw;
+  height:75px;
+  bottom: 0;
+  position: fixed;
+}  
+@media (min-width:576px){
+   
+}
+@media (min-width:768px){
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('justinbieber.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}  
+.banner-1 p{
+  font-size: 18px;
+}
+.banner-1 p:nth-child(2){
+  font-size: 50px;
+  font-weight: 700;
+}
+.web-player{
+  display: block;
+  background-color: rgb(34, 33, 33);
+}  
+.back-img{
+  display: block;
+} 
+}
+@media (min-width:992px){
+  .banner{
+    display:flex;
+    flex-direction: column;
+    height: 900px;
+    margin-top:26%;
+  }  
+  .banner-1 p{
+    font-size: 20px;
+  } 
+  .banner-1 p:nth-child(2){
+    font-size: 50px;
+  }
+  .mini-webplayer{
+    display: none;
+}
+
+}
+@media (min-width:1200px){
+  .banner{
+    display:flex;
+    flex-direction: column;
+    height: 900px;
+    margin-top:22%;
+  }   
+  .banner-1 p:nth-child(2){
+    font-size: 90px;
+  }
+  .banner-1 p{
+    font-size: 20px;
+  } 
+}
+@media (min-width:2200px){
+  .banner-1 p:nth-child(2){
+    font-size: 80px;
+  }
+  .banner-1 p{
+    font-size: 40px;
+  }  
+}
