@@ -28,7 +28,7 @@ link:active{
 }  
 .main-cards{
     background-color: rgb(42, 42, 42);
-    width: 120px;
+    width: 100px;
     height: 100px;
 }
 .img-cards{
@@ -38,6 +38,16 @@ link:active{
 .main-cards p{
     font-size: 15px;
     text-align: left;
+}
+@media(min-width:400px) {
+    .main-cards{
+        background-color: rgb(42, 42, 42);
+        width: 150px;
+        height: 150px;
+    }
+    .img-cards{
+        width: 100px;
+    }   
 }
 @media (min-width:576px){
     .main-cards{
