@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('justinbieber.jpg');
+    background-image: url('https://i.scdn.co/image/ab6761610000e5ebc40600e02356cc86f0debe84');
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
@@ -13,13 +13,16 @@ body{
   height: 900px;
   margin-top:36%;
 }
+.banner-1 p{
+    color:black;
+}
 .banner-1 p:nth-child(2){
   font-size: 30px;
-  font-weight: 700
+  font-weight: 700;
 }
 .banner-2{
-  height: 100vh;
-  background-image:linear-gradient(to right,rgba(0, 46, 73, 0.986),rgb(20, 20, 20));
+  height: 900px;
+  background-image: linear-gradient(to right,rgb(4 4 4),rgb(177 175 175));
 }
 .back-img{
   display: none;
@@ -45,13 +48,23 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('justinbieber.jpg');
+    background-image: url('atif.jpg');
     background-attachment: fixed;
-    background-size: cover;
+    background-size:contain;
     background-repeat: no-repeat;
 }  
+.banner{
+    display:flex;
+    flex-direction: column;
+    height: 900px;
+    margin-top:33%;
+  }
+.banner-2{
+    height: 900px;
+    background-image: linear-gradient(to right,rgb(4 4 4),rgb(177 175 175));}
 .banner-1 p{
   font-size: 18px;
+ color: rgb(255, 255, 255);
 }
 .banner-1 p:nth-child(2){
   font-size: 50px;
@@ -81,9 +94,24 @@ body{
   .mini-webplayer{
     display: none;
 }
-
+.main-cards{
+    cursor: pointer;
+    background-color: #333333;
+    display: block;
+    width: 200px;
+    height: 280px;
+}
 }
 @media (min-width:1200px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-image: url('atif.jpg');
+        background-attachment: fixed;
+        background-size:cover;
+        background-repeat: no-repeat;
+    } 
   .banner{
     display:flex;
     flex-direction: column;
@@ -98,6 +126,7 @@ body{
   } 
 }
 @media (min-width:2200px){
+     
   .banner-1 p:nth-child(2){
     font-size: 130px;
   }
