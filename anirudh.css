@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('darshanmobile.jpg');
+    background-image: url('https://i.scdn.co/image/ab67706c0000bebb8454c69398aed4193dda8123');
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@ body{
 }
 .banner-2{
   height: 900px;
-  background-image: linear-gradient(to right,rgb(35 42 27),rgb(20, 20, 20));
+  background-image: linear-gradient(to right,rgb(183 20 42),rgb(20, 20, 20));
 }
 .back-img{
   display: none;
@@ -45,7 +45,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('https://www.thedigitalhash.com/wp-content/uploads/2020/02/1200.jpg');
+    background-image: url('anirudh.jpg');
     background-attachment: fixed;
     background-size:contain;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ body{
   }
 .banner-2{
     height: 900px;
-    background-image: linear-gradient(to right,rgb(155 243 231),rgb(20, 20, 20));
+    background-image: linear-gradient(to right,rgb(201 119 80),rgb(20, 20, 20));
   }
 .banner-1 p{
   font-size: 18px;
@@ -105,7 +105,7 @@ body{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-image: url('https://www.thedigitalhash.com/wp-content/uploads/2020/02/1200.jpg');
+        background-image: url('anirudh.jpg');
         background-attachment: fixed;
         background-size:cover;
         background-repeat: no-repeat;
