@@ -2,11 +2,12 @@ const play0 = document.getElementById("play0");
 const play1 = document.getElementById("play1");
 const play2 = document.getElementById("play2");
 const likes = document.getElementById("likes");
-
+const hours=document.getElementById("hours");
 let universal = true;
 
 const playMusic1 = () => {
     universal = false;
+    hours.play();
     play0.classList.replace("fa-play-circle", "fa-pause-circle");
     play1.classList.replace("fa-play-circle", "fa-pause-circle");
     play2.classList.replace("fa-play-circle", "fa-pause-circle");
@@ -14,6 +15,7 @@ const playMusic1 = () => {
 };
 const pauseMusic1 = () => {
     universal = true;
+    hours.pause();
     play0.classList.replace("fa-pause-circle", "fa-play-circle");
     play1.classList.replace("fa-pause-circle", "fa-play-circle");
     play2.classList.replace("fa-pause-circle", "fa-play-circle");
