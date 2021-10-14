@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,122 +7,130 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
 }
-.banner{
-  display:flex;
-  flex-direction: column;
-  height: 900px;
-  margin-top:18%;
-}
-.banner-1 p:nth-child(2){
-  font-size: 30px;
-  font-weight: 700;
-}
-.banner-2{
-  height: 900px;
-  background-image: linear-gradient(to right,rgb(40 110 215 / 98%),rgb(20, 20, 20));
-}
-.back-img{
-  display: none;
-}
-.play-icon{
-  display: none;
-}
-.volume-icon{
-  display: none;
-}
-.mini-webplayer{
-  background-color: rgb(34, 33, 33);
-  width:100vw;
-  height:75px;
-  bottom: 0;
-  position: fixed;
-}  
-@media (min-width:576px){
-   
-}
-@media (min-width:768px){
-  body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-image: url('jass.jpg');
-    background-attachment: fixed;
-    background-size:contain;
-    background-repeat: no-repeat;
-}  
-.banner-2{
-    height: 900px;
-    background-image: linear-gradient(to right,rgb(40 110 215 / 98%),rgb(20, 20, 20));
-  }
-.banner-1 p{
-  font-size: 18px;
- 
-}
-.banner-1 p:nth-child(2){
-  font-size: 50px;
-  font-weight: 700;
-}
-.web-player{
-  display: block;
-  background-color: rgb(34, 33, 33);
-}  
-.back-img{
-  display: block;
-} 
-}
-@media (min-width:992px){
-  .banner{
-    display:flex;
+
+.banner {
+    display: flex;
     flex-direction: column;
     height: 900px;
-    margin-top:26%;
-  }  
-  .banner-1 p{
-    font-size: 20px;
-  } 
-  .banner-1 p:nth-child(2){
-    font-size: 50px;
-  }
-  .mini-webplayer{
+    margin-top: 18%;
+}
+
+.banner-1 p:nth-child(2) {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.banner-2 {
+    height: 900px;
+    background-image: linear-gradient(to right, rgb(40 110 215 / 98%), rgb(20, 20, 20));
+}
+
+.back-img {
     display: none;
 }
-.main-cards{
-    cursor: pointer;
-    background-color: #333333;
-    display: block;
-    width: 200px;
-    height: 280px;
+
+.play-icon {
+    display: none;
 }
+
+.volume-icon {
+    display: none;
 }
-@media (min-width:1200px){
-    body{
+
+.mini-webplayer {
+    background-color: rgb(34, 33, 33);
+    width: 100vw;
+    height: 75px;
+    bottom: 0;
+    position: fixed;
+}
+
+@media (min-width:576px) {}
+
+@media (min-width:768px) {
+    body {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         background-image: url('jass.jpg');
         background-attachment: fixed;
-        background-size:cover;
+        background-size: contain;
         background-repeat: no-repeat;
-    } 
-  .banner{
-    display:flex;
-    flex-direction: column;
-    height: 900px;
-    margin-top:22%;
-  }   
-  .banner-1 p:nth-child(2){
-    font-size: 90px;
-  }
-  .banner-1 p{
-    font-size: 20px;
-  } 
+    }
+    .banner-2 {
+        height: 900px;
+        background-image: linear-gradient(to right, rgb(40 110 215 / 98%), rgb(20, 20, 20));
+    }
+    .banner-1 p {
+        font-size: 18px;
+    }
+    .banner-1 p:nth-child(2) {
+        font-size: 50px;
+        font-weight: 700;
+    }
+    .web-player {
+        display: block;
+        background-color: rgb(34, 33, 33);
+    }
+    .back-img {
+        display: block;
+    }
 }
-@media (min-width:2200px){
-     
-  .banner-1 p:nth-child(2){
-    font-size: 130px;
-  }
-  .banner-1 p{
-    font-size: 40px;
-  }  
+
+@media (min-width:992px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        margin-top: 26%;
+    }
+    .banner-1 p {
+        font-size: 20px;
+    }
+    .banner-1 p:nth-child(2) {
+        font-size: 50px;
+    }
+    .mini-webplayer {
+        display: none;
+    }
+    .main-cards {
+        cursor: pointer;
+        background-color: #333333;
+        display: block;
+        width: 200px;
+        height: 280px;
+    }
+}
+
+@media (min-width:1200px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-image: url('jass.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .banner {
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        margin-top: 22%;
+    }
+    .banner-1 p:nth-child(2) {
+        font-size: 90px;
+    }
+    .banner-1 p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:2200px) {
+    .banner-1 p:nth-child(2) {
+        font-size: 130px;
+    }
+    .banner-1 p {
+        font-size: 40px;
+    }
 }

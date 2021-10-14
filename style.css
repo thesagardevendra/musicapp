@@ -1,155 +1,175 @@
-body{
-margin: 0;
+body {
+    margin: 0;
+    cursor: pointer;
 }
+
 a:link {
     color: inherit;
     text-decoration: none;
 }
-a:visited{
+
+a:visited {
     color: inherit;
     text-decoration: none;
 }
-a:active{
+
+a:active {
     color: inherit;
     text-decoration: none;
 }
-.main-class{
+
+.main-class {
     justify-content: center;
     padding-bottom: 90px;
 }
-.grid-box{
-width:140px;
-background-color: rgb(255, 255, 255);
-height:140px;
-margin: 10px;
-border-radius: 15px;
-text-overflow: ellipsis;
-font-size: 12px;
+
+.grid-box {
+    width: 140px;
+    background-color: rgb(255, 255, 255);
+    height: 140px;
+    margin: 10px;
+    border-radius: 15px;
+    text-overflow: ellipsis;
+    font-size: 12px;
 }
-.main-two{
+
+.main-two {
     display: none;
 }
-.logo{
-justify-content: center;
-margin-top: 20px;
-margin-left: 10px;
+
+.logo {
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 10px;
     z-index: 1;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
-.logo2{
+
+.logo2 {
     justify-content: center;
     margin-left: 10px;
-  top: 20px;
+    top: 20px;
     z-index: 1;
 }
-.logo-image{
+
+.logo-image {
     position: relative;
     filter: opacity(90%);
 }
 
-.back-img{
+.back-img {
     display: none;
 }
-.play-icon{
+
+.play-icon {
     display: none;
 }
-.volume-icon{
+
+.volume-icon {
     display: none;
 }
-.mini-webplayer{
+
+.mini-webplayer {
     background-color: rgb(34, 33, 33);
-    width:100vw;
-    height:75px;
+    width: 100vw;
+    height: 75px;
+    z-index: 1;
     bottom: 0;
     position: fixed;
-}  
+}
 
-.main-cards{
+.main-cards {
     display: none;
 }
-@media (min-width:576px){
-    .main-cards{
+
+@media (min-width:576px) {
+    .main-cards {
         display: none;
     }
-    .main-two{
+    .main-two {
         display: none;
     }
-    .grid-box{
-        width:200px;
-        height:200px;
+    .grid-box {
+        width: 200px;
+        height: 200px;
         font-size: 16px;
         background-color: white;
     }
-    .fa{
-        font-size:50px;
-    }  
-   .fa-arrow-circle-up{
-       font-size: 25px;
-   }
+    .fa {
+        font-size: 50px;
+    }
+    .fa-arrow-circle-up {
+        font-size: 25px;
+    }
 }
-@media (min-width:768px){
-    .web-player{
+
+@media (min-width:768px) {
+    .web-player {
         display: block;
         background-color: rgb(34, 33, 33);
-    }  
-    .back-img{
-        display: block;
-    } 
-}
-@media (min-width:992px){
-    .mini-webplayer{
-        display: none;
     }
-    .main-cards{
+    .back-img {
+        display: block;
+    }
+    .mini-webplayer {
+        display: none;
+        z-index: -1;
+    }
+}
+
+@media (min-width:992px) {
+    .mini-webplayer {
+        display: none;
+        z-index: -1;
+    }
+    .main-cards {
         cursor: pointer;
         background-color: #333333;
         display: block;
         width: 200px;
         height: 280px;
     }
-   .play-button{
-
-     display: none;
-   }
-  .main-cards:hover{
-      background-color: #3b3b3b;
-      transition: .5s all;
-  }
-   .main-cards:hover .play-button{
-      margin-left: 110px; 
-      margin-top: 110px;
-       display:block;
-   }
-   .play-button:hover{
-   transform: scale(1.1);
-   }
-    .main-class{
-    
+    .play-button {
+        display: none;
+    }
+    .main-cards:hover {
+        background-color: #3b3b3b;
+        transition: .5s all;
+    }
+    .main-cards:hover .play-button {
+        margin-left: 110px;
+        margin-top: 110px;
+        display: block;
+    }
+    .play-button:hover {
+        transform: scale(1.1);
+    }
+    .main-class {
+        flex: 0;
         margin-bottom: 10px;
         margin-left: 10px;
-    display: flex;
-    justify-content: left;
-    align-items:flex-start ;
-    flex-direction: column;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
     }
-    .grid-box{
-        width:160px;
-        height:160px;
+    .grid-box {
+        width: 160px;
+        height: 160px;
         font-size: 13px;
     }
-    .main-two{
-       
+    .main-two {
         background-color: rgb(46, 46, 46);
         display: block;
         width: 100%;
     }
 }
-@media (min-width:1200px){
-    
-}
-@media (min-width:2200px){
-    
-}
+
+@media (min-width:1200px) {}
+
+@media (min-width:2200px) {}
+
+
 /* .card{
     background-color: aquamarine;
     min-width: 20%;
