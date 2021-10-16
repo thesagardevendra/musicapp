@@ -8,6 +8,94 @@ body {
     background-repeat: no-repeat;
     cursor: pointer;
 }
+a:link{
+    color: inherit;
+}
+a:visited{
+    color:inherit;
+}
+a:hover{
+    color: inherit;
+}
+.artist-image-style{
+height: 80px;
+    width: 80px;
+ 
+}
+.web-player{
+    display: block;
+}
+.web-progressbar{
+    width:600px;
+    height:5px;
+    border-radius: 100px;
+    background-color:rgba(133, 132, 132, 0.507);
+}
+.progress_bar{
+    width:200px;
+    height:5px;
+    border-radius: 100px;
+    background-color:rgba(133, 132, 132, 0.507);
+}
+.progressed:hover{
+    background-color: green;
+}
+.web-progressedbar{
+    height:5px;
+    width:0%;
+    border-radius: 100px;
+    background-color: rgb(254, 255, 254);
+ transition: all 0.5s;
+   position: relative;
+}
+.web-progressedbar:after{
+    content: "";
+    position:absolute;
+    border-radius: 10px;
+    right:-10px;
+    top:-3.70px;
+    width:12px;
+    height:12px;
+    background-color: lawngreen;
+}
+.progressed{
+    height:5px;
+    width:0%;
+    border-radius: 100px;
+    background-color: rgb(254, 255, 254);
+ transition: all 0.5s;
+   position: relative;
+}
+.progressed:after{
+    content: "";
+position:absolute;
+border-radius: 10px;
+right:-10px;
+top:-3.70px;
+width:12px;
+height:12px;
+background-color:rgba(133, 132, 132);
+}
+.web-progressedbar:hover:after{
+    content: "";
+    position:absolute;
+    border-radius: 10px;
+    right:-10px;
+    top:-3.70px;
+    width:12px;
+    height:12px;
+    background-color:green;
+}
+ .progressed:hover:after{
+    content: "";
+position:absolute;
+border-radius: 10px;
+right:-10px;
+top:-3.70px;
+width:12px;
+height:12px;
+background-color:green;
+}
 
 .banner {
     display: flex;
@@ -26,17 +114,17 @@ body {
     background-image: linear-gradient(to right, rgba(0, 46, 73, 0.986), rgb(20, 20, 20));
 }
 
-.back-img {
+/* .back-img {
     display: none;
-}
+} */
 
-.play-icon {
+/* .play-icon {
     display: none;
-}
+} */
 
-.volume-icon {
+/* .volume-icon {
     display: none;
-}
+} */
 
 .mini-webplayer {
     background-color: rgb(34, 33, 33);
@@ -47,7 +135,9 @@ body {
     position: fixed;
 }
 
-@media (min-width:576px) {}
+@media (min-width:576px) {
+    
+}
 
 @media (min-width:768px) {
     body {
@@ -67,8 +157,24 @@ body {
         font-weight: 700;
     }
     .web-player {
+        width:100vw;
+        height:105px;
+        bottom: 0;
         display: block;
         background-color: rgb(34, 33, 33);
+    }
+    .volume-bar{
+        position: relative;
+    }
+    .volume-bar:after{
+content: "";
+height: 10px;
+width: 10px;
+top:-3px;
+border-radius: 50%;
+position:absolute;
+background-color: lawngreen;
+display: block;
     }
     .back-img {
         display: block;
