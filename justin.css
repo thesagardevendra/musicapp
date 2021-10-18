@@ -8,6 +8,20 @@ body {
     background-repeat: no-repeat;
     cursor: pointer;
 }
+.main-cards {
+    background-color: rgb(42, 42, 42);
+    width: 120px;
+    height: 100px;
+}
+
+.img-cards {
+    width: 60px;
+}
+
+.main-cards p {
+    font-size: 15px;
+    text-align: left;
+}
 a:link{
     color: inherit;
 }
@@ -103,7 +117,7 @@ display: none;
 }
 
 .banner-2 {
-    height: 100vh;
+    
     background-image: linear-gradient(to right, rgba(0, 46, 73, 0.986), rgb(20, 20, 20));
 }
 
@@ -135,9 +149,31 @@ display: none;
         background-color:rgba(133, 132, 132, 0.507);
     }
 }
+@media(min-width:400px) {
+    .main-cards {
+        background-color: rgb(42, 42, 42);
+        width: 150px;
+        height: 150px;
+    }
+    .img-cards {
+        width: 100px;
+    }
+}
 @media (min-width:576px) {
     .play-info{
         display: block;
+    }
+    .main-cards {
+        background-color: rgb(42, 42, 42);
+        width: 200px;
+        height: 240px;
+    }
+    .img-cards {
+        width: 200px;
+    }
+    .main-cards p {
+        font-size: 20px;
+        text-align: left;
     }  
 }
 

@@ -42,7 +42,7 @@ holdOnPlay.classList.replace("fa-pause-circle", "fa-play-circle");
 
 
 
-// Hours Audio
+// Top Tucker Audio
 hoursPlay.addEventListener("click", () => {
     universal ? playMusic1() : pauseMusic1();
           hours.ontimeupdate = function (s) {
@@ -57,8 +57,8 @@ hoursPlay.addEventListener("click", () => {
                 let sec_currentTime = Math.floor(currentTime % 60);
                 current_time.textContent = `${min_currentTime}:${sec_currentTime}`;
             })
-    musicName.textContent="10,000 Hours";
-    artistName.textContent="Justin Beiber";
+    musicName.textContent="Top Tucker";
+    artistName.textContent="Yuvan Shankar Raja";
     const backgroundImage=document.getElementById("background-image");
 backgroundImage.style.backgroundImage="url('hours.jpg')"
 peaches.pause();
@@ -103,7 +103,7 @@ hours.ontimeupdate = function (s) {
     hours.addEventListener("ended", nextsong1);
     hours.addEventListener("ended", endmusic1);
 
-// Peaches Audio
+// Enkeyo Audio
 peachesPlay.addEventListener("click", () => {
     universal ? playMusic2() : pauseMusic2();
            peaches.ontimeupdate = function (s) {
@@ -118,8 +118,8 @@ peachesPlay.addEventListener("click", () => {
                     let sec_currentTime = Math.floor(currentTime % 60);
                     current_time.textContent = `${min_currentTime}:${sec_currentTime}`;
                 })
-        musicName.textContent="Peaches";
-        artistName.textContent="Justin Beiber";
+        musicName.textContent="Enkeyo Partha";
+        artistName.textContent="Yuvan Shankar Raja";
         const backgroundImage=document.getElementById("background-image");
     const img=document.createElement('img');
     img.src='https://i.scdn.co/image/ab67616d0000b273a01fed49fe3a84a9919cef29';
@@ -165,7 +165,7 @@ peaches.ontimeupdate = function (s) {
    peaches.addEventListener("ended", nextsong2);
     peaches.addEventListener("ended", endmusic2);
 
-// Hold on Audio
+// Rowdy Baby Audio
 holdOnPlay.addEventListener("click", () => {
     universal ? playMusic3() : pauseMusic3();
            holdOn.ontimeupdate = function (s) {
@@ -180,8 +180,8 @@ holdOnPlay.addEventListener("click", () => {
                     let sec_currentTime = Math.floor(currentTime % 60);
                     current_time.textContent = `${min_currentTime}:${sec_currentTime}`;
                 })
-        musicName.textContent="Hold On";
-        artistName.textContent="Justin Beiber";
+        musicName.textContent="Rowdy Baby";
+        artistName.textContent="Yuvan Shankar Raja";
   
         hours.pause();
         hoursPlay.classList.replace("fa-pause-circle", "fa-play-circle");
