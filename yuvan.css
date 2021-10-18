@@ -6,6 +6,88 @@ body {
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+a:link{
+    color: inherit;
+}
+a:visited{
+    color:inherit;
+}
+a:hover{
+    color: inherit;
+}
+.artist-image-style{
+height: 50px;
+    width: 50px;
+    object-fit: contain; 
+}
+.song-info p{
+font-size: 15px;
+white-space: nowrap;
+width: 90px;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.fa-backward {
+    display: none;
+}
+.fa-forward{
+    display: none;
+}
+#current_time{
+    display: none;
+}
+.fa{
+font-size: 30px;
+}
+.volume{
+    display: none;
+}
+.volume-bar{
+   display: none;
+}
+.volume-bar:after{
+display: none;
+}
+
+.back-img {
+    display: block;
+    font-size: 10px;
+}
+.web-player {
+    width:100vw;
+    height:105px;
+    bottom: 0;
+    display: block;
+    background-color: rgb(34, 33, 33);
+}
+.web-progressbar{
+    width:150px;
+    height:3px;
+    border-radius: 100px;
+    background-color:rgba(133, 132, 132, 0.507);
+}
+.web-progressedbar{
+    height:3px;
+    width:0%;
+    border-radius: 100px;
+    background-color: rgb(254, 255, 254);
+ transition: all 0.5s;
+   position: relative;
+}
+.web-progressedbar:after{
+    content: "";
+    position:absolute;
+    border-radius: 10px;
+    right:-10px;
+    top:-3.70px;
+    width:10px;
+    height:10px;
+    background-color: lawngreen;
+}
+.play-info{
+    display: none;
 }
 
 .banner {
@@ -17,35 +99,47 @@ body {
 
 .banner-1 p:nth-child(2) {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 700
 }
 
 .banner-2 {
-    height: 900px;
-    background-image: linear-gradient(to right, rgb(56, 56, 56), rgb(20, 20, 20));
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(171 171 171), rgb(20, 20, 20));
 }
 
-.back-img {
+/* .back-img {
     display: none;
-}
+} */
 
-.play-icon {
+/* .play-icon {
     display: none;
-}
+} */
 
-.volume-icon {
+/* .volume-icon {
     display: none;
-}
+} */
 
 .mini-webplayer {
     background-color: rgb(34, 33, 33);
     width: 100vw;
     height: 75px;
+
     bottom: 0;
     position: fixed;
 }
-
-@media (min-width:576px) {}
+@media (min-width:375px) {
+    .web-progressbar{
+        width:250px;
+        height:3px;
+        border-radius: 100px;
+        background-color:rgba(133, 132, 132, 0.507);
+    }
+}
+@media (min-width:576px) {
+    .play-info{
+        display: block;
+    }  
+}
 
 @media (min-width:768px) {
     body {
@@ -58,8 +152,8 @@ body {
         background-repeat: no-repeat;
     }
     .banner-2 {
-        height: 900px;
-        background-image: linear-gradient(to right, rgb(139 97 72), rgb(20, 20, 20));
+
+        background-image: linear-gradient(to right, rgb(87 58 46), rgb(20, 20, 20));
     }
     .banner-1 p {
         font-size: 18px;
@@ -68,13 +162,64 @@ body {
     .banner-1 p:nth-child(2) {
         font-size: 50px;
         font-weight: 700;
+        
     }
     .web-player {
+        width:100vw;
+        height:105px;
+        bottom: 0;
         display: block;
         background-color: rgb(34, 33, 33);
     }
+  .fa{
+      font-size: 35px;
+  }
+  .fa-backward {
+    display: block;
+}
+.fa-forward{
+    display: block;
+}
+
+    .web-progressbar{
+        width:600px;
+        height:5px;
+        border-radius: 100px;
+        background-color:rgba(133, 132, 132, 0.507);
+    }
+    .progress_bar{
+        width:200px;
+        height:5px;
+        border-radius: 100px;
+        background-color:rgba(133, 132, 132, 0.507);
+    }
+    .progressed:hover{
+        background-color: green;
+    }
+    .web-progressedbar{
+        height:5px;
+        width:0%;
+        border-radius: 100px;
+        background-color: rgb(254, 255, 254);
+     transition: all 0.5s;
+       position: relative;
+    }
+    .web-progressedbar:after{
+        content: "";
+        position:absolute;
+        border-radius: 10px;
+        right:-10px;
+        top:-3.70px;
+        width:12px;
+        height:12px;
+        background-color: lawngreen;
+    }
     .back-img {
         display: block;
+    }
+    .mini-webplayer {
+        display: none;
+        z-index: -1;
     }
 }
 
@@ -93,15 +238,24 @@ body {
     }
     .mini-webplayer {
         display: none;
+        z-index: -1;
     }
-    .main-cards {
-        cursor: pointer;
-        background-color: #333333;
-        display: block;
+
+    .fa{
+        font-size: 45px;
+    }
+    .song-info p{
+        font-size: 20px;
+        white-space: nowrap;
         width: 200px;
-        height: 280px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+        #current_time{
+            display:block;
+        }
+        
     }
-}
 
 @media (min-width:1200px) {
     body {
@@ -134,4 +288,5 @@ body {
     .banner-1 p {
         font-size: 40px;
     }
+    
 }

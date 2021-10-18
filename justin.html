@@ -16,7 +16,7 @@
 
     <div class=" banner">
         <div class="banner-1 text-light ms-2 mb-3">
-            <p class="m-0"><i class="fa fa-certificate" style="color:rgb(2, 176, 235)"></i> Verified </p>
+            <p class="m-0"><i class="fa fa-certificate" style="color:rgb(2, 176, 235);font-size: 20px;"></i> Verified </p>
             <p class="m-0">Justin Beiber</p>
             <p class="m-0" id="followers-num">85,930,950 monthly listeners</p>
         </div>
@@ -28,20 +28,37 @@
                 <button class=" mt-4 fs-6 p-1 fw-bold" style="background-color:transparent;border:2px solid white;border-radius: 4px;letter-spacing: 2px;color:white" id="follow-button">FOLLOW</button>
             </div>
             <div class="" style="width:300px" >
+                <!-- Hours -->
                 <div class="d-flex align-items-center justify-content-start flex-nowrap ms-4 mt-4" style="white-space: nowrap; ">
                     <p class="text-light me-4 ">1</p>
                  <p class="me-4 text-light"><a" href="hours.html"><img src="hours.jpg" width="50"></a></p>
                  <p class="me-4"> <a  class="text-light " href="hours.html"  style="text-decoration: none; width: 100px;display: block;text-overflow: ellipsis;">10,000 Hours</a></p><audio id="hours" src="hours.mp3"></audio>    
-               
+                 <p class="me-4 play-info "> <a  class="text-light" href="hours.html"  style="text-decoration: none; width: 100px;display: block;text-overflow: ellipsis;">Justin Beiber</a></p>
+                 <p class="me-4 play-info "> <a  class="text-light play-info" href="hours.html"  style="text-decoration: none; width: 100px;display: block;text-overflow: ellipsis;">69,86,963</a></p>
                      <i class="fa fa-play-circle fa-2x me-4 mb-3" id="hoursPlay" style="color:rgb(125, 189, 22)"></i>
                   </div>
+
+                  <!-- Peaches -->
                  <div class="d-flex align-items-center justify-content-start  ms-4 mt-4"  style="white-space: nowrap;" >
                      <p class="text-light me-4 ">2</p>
                   <p class="me-4 text-light"><a" href="#"><img src="peaches.jpg" width="50"></a></p>
                   <p class="me-4"> <a  class="text-light " href="#"  style="text-decoration: none; width: 100px;display: block;">Peaches</a></p><audio id="peaches" src="peaches.mp3"></audio>    
-                  
-                      <i class="fa fa-play-circle fa-2x me-4 mb-3" id="peachesPlay" style="color:rgb(125, 189, 22)"></i>
+                  <p class="me-4 play-info "> <a  class="text-light" href="hours.html"  style="text-decoration: none; width: 100px;display: block;text-overflow: ellipsis;">Justin Beiber</a></p>
+                  <p class="me-4 play-info "> <a  class="text-light" href="hours.html"  style="text-decoration: none; width: 100px;display: block;text-overflow: ellipsis;">75,56,263</a></p>
+                 
+                  <i class="fa fa-play-circle fa-2x me-4 mb-3" id="peachesPlay" style="color:rgb(125, 189, 22)"></i>
                  </div>
+
+                 <!-- Hold On -->
+                 <div class="d-flex align-items-center justify-content-start  ms-4 mt-4"  style="white-space: nowrap;" >
+                    <p class="text-light me-4 ">3</p>
+                 <p class="me-4 text-light"><a" href="#"><img src="holdon.jpg" width="50"></a></p>
+                 <p class="me-4"> <a  class="text-light " href="#"  style="text-decoration: none; width: 100px;display: block;">Hold On</a>
+                </p><audio id="hold-on" src="holdon.mp3"></audio>    
+                <p class="me-4 play-info "> <a  class="text-light" href="hours.html"  style="text-decoration: none; width: 100px;display: block;text-overflow: ellipsis;">Justin Beiber</a></p>
+                <p class="me-4 play-info "> <a  class="text-light " href="hours.html"  style="text-decoration: none; width: 100px;display: block;text-overflow: ellipsis;">87,89,456</a></p>
+                     <i class="fa fa-play-circle fa-2x me-4 mb-3" id="holdOnPlay" style="color:rgb(125, 189, 22)"></i>
+                </div>
             </div>
 
 
@@ -50,7 +67,7 @@
 
 
     <!-- Mobile Device Mini player Footer-->
-    <div class="mini-webplayer d-flex align-items-center justify-content-between ps-3">
+    <!-- <div class="mini-webplayer d-flex align-items-center justify-content-between ps-3">
         <i class="fa fa-arrow-circle-up text-light"></i>
         <div class="d-flex align-items-center flex-column">
 
@@ -62,23 +79,23 @@
             <i class="fa fa-play-circle me-1 " style="color:rgb(125, 189, 22);font-size:35px;" id="play2"></i>
             <i class="fa fa-step-forward me-3 text-light" style="font-size:30px;"></i>
         </div>
-    </div>
+    </div> -->
     <!-- Web player Footer-->
     <div  class="d-flex justify-content-between m-auto p-3 position-fixed web-player">
         <div class="d-flex ">
-            <div class="bg-warning me-2 back-img artist-image-style" id="background-image" ></div>
-            <div class="">
-                <p class="text-light m-0 fw-bold fs-5 back-img" style="letter-spacing:1px;"  id="music-name">Music name</p>
-                <p class="text-light m-0 back-img" style="letter-spacing:1px;" id="artist-name">Artist </p>
+            <img class="bg-warning me-2  img-fluid" id="background-image" >
+            <div class="song-info">
+                <p class="text-light m-0 fw-bold " style="letter-spacing:1px;"  id="music-name">Music name</p>
+                <p class="text-light m-0 " style="letter-spacing:1px;" id="artist-name">Artist </p>
             </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center text-light back-img flex-column ">
+        <div class="d-flex justify-content-center align-items-center text-light flex-column ">
             <div class="d-flex justify-content-center align-items-center mb-3">
-                <i class="fa fa-step-backward me-2 back-img" style="font-size:30px;"></i>
-                <i class="fa fa-backward me-3 back-img" style="font-size:30px;"></i>
-                <i class="fa fa-play-circle me-3 back-img" style="color:rgb(125, 189, 22);font-size:55px;" id="play0"></i>
-                <i class="fa fa-forward me-2 back-img" style="font-size:30px;"></i>
-                <i class="fa fa-step-forward me-2 back-img" style="font-size:30px;" id="nextSong"></i></div>
+                <i class="fa fa-step-backward me-2 "></i>
+                <i class="fa fa-backward me-3 " ></i>
+                <i class="fa fa-play-circle me-3 " style="color:rgb(125, 189, 22);" id="play0"></i>
+                <i class="fa fa-forward me-2 " ></i>
+                <i class="fa fa-step-forward me-2 "  id="nextSong"></i></div>
             <div class="d-flex align-items-center">
                 <div class="web-progressbar me-4" id="web-progress1">
                     <div class="web-progressedbar" id="web-progressed1"></div>
@@ -89,10 +106,10 @@
             
         </div>
         
-        <div class="d-flex align-items-center">
-            <i class="fa fa-volume-up text-light me-2 back-img" style="font-size: 28px;"></i>
+        <div class="d-flex align-items-center ">
+            <i class="fa fa-volume-up text-light me-2 d-none" style="font-size: 28px;"></i>
             <div>
-                <div class="bg-secondary rounded me-5 back-img volume-bar" style="width:200px; height: 5px; "><span></span></div>
+                <div class="bg-secondary rounded me-5  volume-bar" style="width:200px; height: 5px; "><span></span></div>
             </div>
         </div>
     </div>

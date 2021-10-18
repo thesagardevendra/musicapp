@@ -16,83 +16,93 @@
 
     <div class=" banner">
         <div class="banner-1 text-light ms-2 mb-3">
-            <p class="m-0"><i class="fa fa-certificate" style="color:rgb(2, 176, 235)"></i> Verified </p>
+            <p class="m-0"><i class="fa fa-certificate" style="color:rgb(2, 176, 235);font-size: 20px;"></i> Verified </p>
             <p class="m-0">Yuvan Shankar Raja</p>
-            <p class="m-0">930,950 monthly listeners</p>
+            <p class="m-0">2,430,950 monthly listeners</p>
         </div>
         <div class="banner-2">
-
+            <div class="d-flex justify-content-start align-items-center ">
+                <audio id="hours" src="toptucker.mp3"></audio>
+                     <i class="fa fa-play-circle ms-4 mt-3" style="color:rgb(157, 255, 0);font-size:60px;" id="play1"></i>
+                     <i class="fa fa-heart m-4 fs-2 mt-5" style="color:white;" id="likes"></i>
+                     <button class=" mt-4 fs-6 p-1 fw-bold" style="background-color:transparent;border:2px solid white;border-radius: 4px;letter-spacing: 2px;color:white" id="follow-button">FOLLOW</button>
+                 </div>
+                 <div class="" style="width:300px" >
+                     <!-- Hours -->
+                     <div class="d-flex align-items-center justify-content-start flex-nowrap ms-4 mt-4" style="white-space: nowrap; ">
+                         <p class="text-light me-4 ">1</p>
+                      <p class="me-4 text-light"><a" href="toptucker.html"><img src="toptucker.jpg" width="50"></a></p>
+                      <p class="me-4"> <a  class="text-light " href="hours.html"  style="text-decoration: none; width: 100px;display: block;text-overflow: ellipsis;">Top Tucker</a></p><audio id="hours" src="toptucker.mp3"></audio>    
+                      <p class="me-4 play-info "> <a  class="text-light" href="hours.html"  style="text-decoration: none;white-space:nowrap;overflow: hidden;; width: 100px;display: block;text-overflow: ellipsis;">Yuvan Shankar Raja</a></p>
+                      <p class="me-4 play-info "> <a  class="text-light play-info" href="hours.html"  style="text-decoration: none; width: 100px;display: block;text-overflow: ellipsis;">9,386,963</a></p>
+                          <i class="fa fa-play-circle fa-2x me-4 mb-3" id="hoursPlay" style="color:rgb(125, 189, 22)"></i>
+                       </div>
+     
+                       <!-- Peaches -->
+                      <div class="d-flex align-items-center justify-content-start  ms-4 mt-4"  style="white-space: nowrap;" >
+                          <p class="text-light me-4 ">2</p>
+                       <p class="me-4 text-light"><a" href="#"><img src="enkeyoo.jpg" width="50"></a></p>
+                       <p class="me-4"> <a  class="text-light " href="#"  style="text-decoration: none; width: 100px;display: block;">Enkeyoo Partha</a></p><audio id="peaches" src="Engeyo-Partha.mp3"></audio>    
+                       <p class="me-4 play-info "> <a  class="text-light" href="hours.html"  style="text-decoration: none;white-space:nowrap;overflow: hidden;; width: 100px;display: block;text-overflow: ellipsis;">Yuvan Shankar Raja</a></p>
+                       <p class="me-4 play-info "> <a  class="text-light" href="hours.html"  style="text-decoration: none; width: 100px;display: block;text-overflow: ellipsis;">5,56,263</a></p>
+                      
+                       <i class="fa fa-play-circle fa-2x me-4 mb-3" id="peachesPlay" style="color:rgb(125, 189, 22)"></i>
+                      </div>
+     
+                      <!-- Hold On -->
+                      <div class="d-flex align-items-center justify-content-start  ms-4 mt-4"  style="white-space: nowrap;" >
+                         <p class="text-light me-4 ">3</p>
+                      <p class="me-4 text-light"><a" href="#"><img src="rowdybaby.jpg" width="50"></a></p>
+                      <p class="me-4"> <a  class="text-light " href="#"  style="text-decoration: none; width: 100px;display: block;">Rowdy Baby</a>
+                     </p><audio id="hold-on" src="rowdybaby.mp3"></audio>    
+                     <p class="me-4 play-info "> <a  class="text-light" href="hours.html"  style="text-decoration: none;white-space:nowrap;overflow: hidden;; width: 100px;display: block;text-overflow: ellipsis;">Yuvan Shankar Raja</a></p>
+                     <p class="me-4 play-info "> <a  class="text-light " href="hours.html"  style="text-decoration: none; width: 100px;display: block;text-overflow: ellipsis;">87,89,456</a></p>
+                          <i class="fa fa-play-circle fa-2x me-4 mb-3" id="holdOnPlay" style="color:rgb(125, 189, 22)"></i>
+                     </div>
+                 </div>
         </div>
     </div>
 
-
-    <!-- Mobile Device Mini player Footer-->
-    <div class="mini-webplayer d-flex align-items-center justify-content-between ps-3">
-        <i class="fa fa-arrow-circle-up text-light"></i>
-        <div class="d-flex align-items-center flex-column">
-
-            <p class="text-light fw-bold m-0" style="letter-spacing: 2px;">Music name</p>
-            <p class="text-light m-0" style="letter-spacing: 1px;">Artist</p>
-        </div>
-        <div>
-            <i class="fa fa-step-backward me-1 text-light" style="font-size:30px;"></i>
-            <i class="fa fa-play-circle me-1" style="color:rgb(125, 189, 22);font-size:35px;" id="play2"></i>
-            <i class="fa fa-step-forward me-3 text-light" style="font-size:30px;"></i>
-        </div>
-    </div>
-    <!-- Web player Footer-->
-    <div style="width:100vw;height:105px;bottom: 0;" class="d-flex justify-content-between m-auto p-3 position-fixed web-player">
+    <div  class="d-flex justify-content-between m-auto p-3 position-fixed web-player">
         <div class="d-flex ">
-            <img class="bg-warning me-2 back-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/91/Shershaah_film_poster.jpg/220px-Shershaah_film_poster.jpg" width="80px" height="80px" style="object-fit: cover;">
-            <div class="">
-                <p class="text-light m-0 fw-bold fs-5 back-img" style="letter-spacing:1px;">Music name</p>
-                <p class="text-light m-0 back-img" style="letter-spacing:1px;">Artist</p>
+            <img class="bg-warning me-2  img-fluid" id="background-image" >
+            <div class="song-info">
+                <p class="text-light m-0 fw-bold " style="letter-spacing:1px;"  id="music-name">Music name</p>
+                <p class="text-light m-0 " style="letter-spacing:1px;" id="artist-name">Artist </p>
             </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center text-light back-img sha ">
-            <i class="fa fa-step-backward me-2 back-img" style="font-size:30px;"></i>
-            <i class="fa fa-backward me-3 back-img" style="font-size:30px;"></i>
-            <i class="fa fa-play-circle me-3 back-img" style="color:rgb(125, 189, 22);font-size:55px;" id="play1"></i>
-            <i class="fa fa-forward me-2 back-img" style="font-size:30px;"></i>
-            <i class="fa fa-step-forward me-2 back-img" style="font-size:30px;"></i>
+        <div class="d-flex justify-content-center align-items-center text-light flex-column ">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+                <i class="fa fa-step-backward me-2 "></i>
+                <i class="fa fa-backward me-3 " ></i>
+                <i class="fa fa-play-circle me-3 " style="color:rgb(125, 189, 22);" id="play0"></i>
+                <i class="fa fa-forward me-2 " ></i>
+                <i class="fa fa-step-forward me-2 "  id="nextSong"></i></div>
+            <div class="d-flex align-items-center">
+                <div class="web-progressbar me-4" id="web-progress1">
+                    <div class="web-progressedbar" id="web-progressed1"></div>
+                   
+                </div>
+                <div class="text-light" id="current_time">0:00</div>  
+            </div>
+            
         </div>
-        <div class="d-flex align-items-center">
-            <i class="fa fa-volume-up text-light me-2 back-img" style="font-size: 28px;"></i>
+        
+        <div class="d-flex align-items-center ">
+            <i class="fa fa-volume-up text-light me-2 d-none" style="font-size: 28px;"></i>
             <div>
-                <div class="bg-secondary rounded me-5 back-img" style="width:200px; height: 5px;"><span></span></div>
+                <div class="bg-secondary rounded me-5  volume-bar" style="width:200px; height: 5px; "><span></span></div>
             </div>
         </div>
     </div>
+        </div>
 
 
 
-    <script>
-        const play1 = document.getElementById("play1");
-        const play2 = document.getElementById("play2");
 
-
-        let isPlaying1 = true;
-        const playMusic1 = () => {
-            isPlaying1 = false;
-
-            play1.classList.replace("fa-play-circle", "fa-pause-circle");
-            play2.classList.replace("fa-play-circle", "fa-pause-circle");
-
-        };
-        const pauseMusic1 = () => {
-            isPlaying1 = true;
-
-            play1.classList.replace("fa-pause-circle", "fa-play-circle");
-            play2.classList.replace("fa-pause-circle", "fa-play-circle");
-
-        };;
-        play1.addEventListener("click", () => {
-            isPlaying1 ? playMusic1() : pauseMusic1();
-        });
-        play2.addEventListener("click", () => {
-            isPlaying1 ? playMusic1() : pauseMusic1();
-        });
-    </script>
+        
+    <script src="yuvan.js"></script>
+    
 </body>
 
 </html>
